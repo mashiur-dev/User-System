@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Signup - User System App</title>
+</head>
+
+<body>
+
+  <?php require_once "header.php"; ?>
+  <div class="mx-auto mt-10 max-w-screen-lg">
+    <h3 class="text-2xl mb-2 font-medium leading-6 text-gray-900">User Registration</h3>
+    <p class="mt-1 text-sm text-gray-600">This information will be displayed publicly so be careful what you share.</p>
+  </div>
+
+  <form action="" method="post">
+    <div class="mx-auto my-20 max-w-screen-lg overflow-hidden shadow sm:rounded-md">
+      <div class="bg-white px-4 py-5 sm:p-6">
+        <div class="grid grid-cols-6 gap-6">
+          <div class="col-span-6 sm:col-span-3">
+            <label for="first-name" class="block text-sm font-medium text-gray-700">First name</label>
+            <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="mt-1 p-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+          </div>
+
+          <div class="col-span-6 sm:col-span-3">
+            <label for="last-name" class="block text-sm font-medium text-gray-700">Last name</label>
+            <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="mt-1 p-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+          </div>
+
+          <div class="col-span-6 sm:col-span-6 lg:col-span-2">
+            <label for="country" class="block text-sm font-medium text-gray-700">Country</label>
+            <input type="text" name="country" id="country" autocomplete="address-level2" class="mt-1 p-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+          </div>
+
+          <div class="col-span-6 sm:col-span-3 lg:col-span-2">
+            <label for="city" class="block text-sm font-medium text-gray-700">City</label>
+            <input type="text" name="city" id="city" autocomplete="address-level2" class="mt-1 p-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+          </div>
+
+          <div class="col-span-6 sm:col-span-3 lg:col-span-2">
+            <label for="postal-code" class="block text-sm font-medium text-gray-700">ZIP / Postal code</label>
+            <input type="text" name="postal-code" id="postal-code" autocomplete="postal-code" class="mt-1 p-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+          </div>
+
+          <div class="col-span-6 sm:col-span-3">
+            <label for="email-address" class="block text-sm font-medium text-gray-700">Email address</label>
+            <input type="text" name="email-address" id="email-address" autocomplete="email" class="mt-1 p-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+          </div>
+
+          <div class="col-span-6 sm:col-span-3">
+            <label for="email-address" class="block text-sm font-medium text-gray-700">Password</label>
+            <input type="password" name="password" id="password" autocomplete="email" class="mt-1 p-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+          </div>
+        </div>
+      </div>
+      <div class="bg-gray-50 px-4 py-3 text-right sm:px-6">
+        <button type="submit" class="inline-flex justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">Signup</button>
+      </div>
+    </div>
+  </form>
+  
+
+  <?php require_once "footer.php"; ?>
+</body>
+
+</html>
